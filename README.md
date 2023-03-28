@@ -1,2 +1,47 @@
-# Modulo_rasp
+# Modulo_rasp - Histórico de projeto 
 Repositório dedicado à construção dos módulos de imagens do IMA-MT, utilizando raspberry e webcam
+Manual de construção e configuração
+
+## Upload Drive
+
+Preparar drive para upload automático das imagens tiradas pelo módulo da rasp
+
+### Resposta do ChatGPT
+
+There are several ways to upload files from a Raspberry Pi to a Google Drive folder, but one common method is to use the Google Drive API and a programming language such as Python. Here are the basic steps:
+
+1. Set up a Google Cloud Platform project and enable the Google Drive API for it. You will need to create credentials (client ID and secret) to authenticate your application.
+
+2. Install the Google API client library for Python on your Raspberry Pi.
+
+3. Write a Python script that uses the Google Drive API to authorize your application, create a new folder in your Google Drive, and upload the files from the local folder to the Google Drive folder. Here's a sample code that you can modify to fit your needs:
+
+import os
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+from googleapiclient.http import MediaFileUpload
+
+# Define the path to the local folder and the ID of the Google Drive folder
+local_folder = '/path/to/local/folder'
+drive_folder_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+# Define the credentials object
+creds = Credentials.from_authorized_user_file('/path/to/credentials.json')
+
+# Create a new Drive API client
+drive_service = build('drive', 'v3', credentials=creds)
+
+# Create a new folder in the Google Drive
+folder_metadata = {'name': 'My Folder', 'parents': [drive_folder_id], 'mimeType': 'application/vnd.google-apps.folder'}
+folder = drive_service.files().create(body=folder_metadata, fields='id').execute()
+
+# Upload the files to the Google Drive folder
+for filename in os.listdir(local_folder):
+    file_metadata = {'name': filename, 'parents': [folder['id']]}
+    media = MediaFileUpload(os.path.join(local_folder, filename), resumable=True)
+    file = drive_service.files().create(body=file_metadata, media_body=media, fields='id').execute()
+
+4. Save the script as a Python file and run it on your Raspberry Pi using a cron job or a similar scheduling tool to automate the upload process.
+
+Note that this is just a basic example, and you may need to modify the code to handle errors, upload large files, or customize the folder structure. You can find more information about the Google Drive API and how to use it with Python in the official documentation.
