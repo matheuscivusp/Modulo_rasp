@@ -1,0 +1,45 @@
+To run two different Python scripts on the boot of a Raspberry Pi 3 Model B, you can follow these steps:
+
+Create two Python scripts: Let's say you have two scripts named script1.py and script2.py.
+
+Make both scripts executable: You can do this by running the following commands in the terminal for both scripts:
+
+bash
+Copy code
+chmod +x script1.py
+chmod +x script2.py
+Create a shell script to run both Python scripts: Create a new shell script (let's call it run_scripts.sh) in a text editor and add the following lines:
+
+bash
+Copy code
+#!/bin/bash
+python /path/to/script1.py &
+python /path/to/script2.py &
+Replace /path/to/script1.py and /path/to/script2.py with the actual paths to your scripts.
+
+The & symbol at the end of each line runs the scripts in the background so that they don't block the execution of other scripts.
+
+Make the shell script executable: Run the following command in the terminal:
+
+bash
+Copy code
+chmod +x run_scripts.sh
+Add the shell script to the boot process: You can do this by adding a line to the /etc/rc.local file, which is executed at boot time. Open the file in a text editor by running:
+
+bash
+Copy code
+sudo nano /etc/rc.local
+Add the following line just before the exit 0 line:
+
+bash
+Copy code
+/path/to/run_scripts.sh &
+Replace /path/to/run_scripts.sh with the actual path to your shell script.
+
+Save the file and exit the text editor.
+
+Reboot your Raspberry Pi: Run the following command in the terminal:
+
+Copy code
+sudo reboot
+Your Raspberry Pi should now execute both Python scripts on boot.
