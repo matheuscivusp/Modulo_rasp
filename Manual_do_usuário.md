@@ -24,6 +24,7 @@ O módulo é composto por:
   
 ### Acessando a raspberry
   
-  Com acesso à raspberry, verificar as conexões wi-fi disponíveis, e só será possível visualizar as imagens ao acessar a raspberry, o que pode ser feito remotamente através de softwares como o VNC Viewer ou AnyDesk, ou conectando os periféricos (Monitor-HDMI, Mouse-USB, Teclado-USB) nas entradas da raspberry, sendo esse segundo método mais simples e recomendado. A raspberry possui um Sistema Operacional Próprio (Raspberry Pi OS) baseado em Linux, portanto os comandos do prompt são os mesmos de sistemas linux. 
-
+  O acesso pode ser feito remotamente através de softwares como o VNC Viewer ou AnyDesk, ou conectando os periféricos (Monitor-HDMI, Mouse-USB, Teclado-USB) nas entradas da raspberry, sendo esse segundo método mais simples e recomendado. A raspberry possui um Sistema Operacional Próprio (Raspberry Pi OS) baseado em Linux, portanto os comandos do prompt são os mesmos de sistemas linux. A conexão via cabo ethernet também é necessária, ou pode-se conectar à rede wi-fi pelo próprio layout da raspberry, igual a um pc padrão.
+  
+  Acessando a raspberry é possível visualizar as imagens e outros arquivos relacionados, o script de upload do drive leva um tempo até subir todas as imagens, então é necessário manter a raspberry concectada por bastante tempo à rede.
 
