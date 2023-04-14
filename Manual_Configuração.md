@@ -1,6 +1,11 @@
 # Instruções da configuração da raspberry
 
-## Instalando funções básicas da raspberry
+## Configurações iniciais da raspberry
+
+### Pinagem da placa:
+
+
+Baixar o Sistema Operacional, Raspberry Pi OS [Link Text](https://www.raspberrypi.com/software/),[[https://www.raspberrypi.com/software/|Link Text]] e gravar o sistema no cartão SD, configurando o usuário e senha como quiser, mas lembrar de habilitar a conexão SSH.
 
 Todas as raspberry estão utilizando o nome e senha padrão
 
