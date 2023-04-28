@@ -44,13 +44,16 @@ $ groups
 
 reboot
 
-Agora é necessário criar um script (arquivo .sh) linux que irá tirar as fotos e salvar no formato que queremos
+Agora é necessário criar um script (arquivo .sh) linux que irá tirar as fotos e salvar no formato que queremos:
 
+Pegar na raspberry
 
+Tornar o .sh um arquivo executável
 
 Também criamos um programa em Python para tirar essas fotos usando um botão:
 
-- código em 
+- código no git
+
 
 
 
