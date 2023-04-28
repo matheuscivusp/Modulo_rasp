@@ -34,7 +34,23 @@ $ lsusb
 
 A câmera deve aparecer
 
-Agora, é necessário insalar um pacote para interagir com a webcam
+Agora, é necessário insalar um pacote para interagir com a webcam:
+
+$ sudo apt install fswebcam
+
+$ sudo usermod -a -G video gabriel
+
+$ groups
+
+reboot
+
+Agora é necessário criar um script (arquivo .sh) linux que irá tirar as fotos e salvar no formato que queremos
+
+
+
+Também criamos um programa em Python para tirar essas fotos usando um botão:
+
+- código em 
 
 
 
