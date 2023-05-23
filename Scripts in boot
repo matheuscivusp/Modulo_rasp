@@ -8,7 +8,8 @@ bash
 Copy code
 chmod +x script1.py
 chmod +x script2.py
-Create a shell script to run both Python scripts: Create a new shell script (let's call it run_scripts.sh) in a text editor and add the following lines:
+Create a shell script to run both Python scripts: Create a new shell script (let's call it run_scripts.sh) in a text editor
+and add the following lines:
 
 bash
 Copy code
@@ -24,7 +25,8 @@ Make the shell script executable: Run the following command in the terminal:
 bash
 Copy code
 chmod +x run_scripts.sh
-Add the shell script to the boot process: You can do this by adding a line to the /etc/rc.local file, which is executed at boot time. Open the file in a text editor by running:
+Add the shell script to the boot process: You can do this by adding a line to the /etc/rc.local file, which is executed at boot time.
+Open the file in a text editor by running:
 
 bash
 Copy code
