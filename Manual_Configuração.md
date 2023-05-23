@@ -6,7 +6,7 @@
 
 ![alt text](https://github.com/matheuscivusp/Modulo_rasp/blob/main/Raspberry-Pi-3-model-B-module-and-pin-out.png)
 
-Baixar o Sistema Operacional, Raspberry Pi OS [Link Text](https://www.raspberrypi.com/software/),[[https://www.raspberrypi.com/software/|Link Text]] e gravar o sistema no cartão SD, configurando o usuário e senha como quiser, mas lembrar de habilitar a conexão SSH.
+Baixar o Sistema Operacional, Raspberry Pi OS [Link Text](https://www.raspberrypi.com/software/),[[https://www.raspberrypi.com/software/] e gravar o sistema no cartão SD, configurando o usuário e senha como quiser, mas lembrar de habilitar a conexão SSH.
 
 Todas as raspberry estão utilizando o nome e senha padrão
 
