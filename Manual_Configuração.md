@@ -178,7 +178,7 @@ for filename in os.listdir(local_folder):
     
     file = drive_service.files().create(body=file_metadata, media_body=media, fields='id').execute()
     
-## ====================================================================================
+# ====================================================================================
 4. Save the script as a Python file and run it on your Raspberry Pi using a cron job or a similar scheduling tool to automate the upload process.
 
 Note that this is just a basic example, and you may need to modify the code to handle errors, upload large files, or customize the folder structure. You can find more information about the Google Drive API and how to use it with Python in the official documentation.
@@ -187,5 +187,24 @@ Note that this is just a basic example, and you may need to modify the code to h
 ## Desenvolvimento da execução dos códigos e scripts no boot
 ## Hardware
 ## Construção da Case
+    
+    Uma case foi desenvolvida na plataforma onshape (CAD) para armazenar todo o sistema embarcado
+    
+    Inserir a imagem da case aqui:
+    
+    #Detalhes da motagem:
+    
+    A case possui uma tampa que é encaixada mecanicamente para permitir uma fácil manutenção dos componentes. A imagem já descreve
+    bem a montagem, botões e led para fora da caixa através dos buracos e as entradas e saídas da powerbank e rasp abertas para
+    permitir as conexões, a câmera fica projetada e encaixada mecanicamente, alguns componentes são fixados mecanicamente
+    
+    
+    
 ## Elaboração de testes
+    
+    Descrever todos os testes no manual de usuário
+    
+    Testes a serem realizados: tempo de autonomia da bateria (20.000 mAh)
+    Teste com a conectividade: testar apenas colocando no cabo de rede ethernet, ver se ocorre o upload das imagens
+    
 ## Utilização do Ansible
