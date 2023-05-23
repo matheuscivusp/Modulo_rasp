@@ -125,6 +125,8 @@ Manual de construção e configuração
 ## Upload Drive
 
 Preparar drive para upload automático das imagens tiradas pelo módulo da rasp
+    
+    https://console.cloud.google.com/
 
 ### Resposta do ChatGPT
 
