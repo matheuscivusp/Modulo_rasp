@@ -129,7 +129,10 @@ Preparar drive para upload automático das imagens tiradas pelo módulo da rasp
     https://console.cloud.google.com/
 
 ### Resposta do ChatGPT
+    
 
+1N_aghN43AfBv3kPUCfqsFpu3lESe04eO
+    
 There are several ways to upload files from a Raspberry Pi to a Google Drive folder, but one common method is to use the Google Drive API and a programming language such as Python. Here are the basic steps:
 
 1. Set up a Google Cloud Platform project and enable the Google Drive API for it. You will need to create credentials (client ID and secret) to authenticate your application.
