@@ -8,6 +8,7 @@ bash
 Copy code
 chmod +x script1.py
 chmod +x script2.py
+
 Create a shell script to run both Python scripts: Create a new shell script (let's call it run_scripts.sh) in a text editor
 and add the following lines:
 
